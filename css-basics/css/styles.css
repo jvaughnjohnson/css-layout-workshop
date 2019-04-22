@@ -1,0 +1,27 @@
+p {
+    color: red;
+}
+
+.class-callout {
+    color: green;
+}
+
+#selector-callout {
+    color: blue;
+}
+
+.boxes p {
+    color: purple;
+}
+
+.items > li {
+    list-style: none;
+}
+
+h3 + p {
+    font-size: 120%;
+}
+
+h3 ~ p {
+    color: slateblue;
+}

@@ -8,8 +8,46 @@
     <body>
         <h1>CSS Basics</h1>
         <p>Before I can create great layouts, I need to make sure I understand the basics of CSS.</p>
+        
         <h2>CSS Selectors</h2>
         <p>I need to learn how to select parts of the document I'm working on, before I can master CSS layout.</p>
+            
+        <h3>Element Selectors</h3>
+        <p>One of the most basic ways to select "something" to style is to target the HTML element directly. One thing to remember is here is that this approach will style every instance of this element in an HTML document.</p>
         
+        <h3>Class Selectors</h3>
+        <p class="class-callout">To target something more specifically, we can use class selectors. Class selector don't have to be associated with any specific element.</p>
+        
+        <h3>ID Selectors</h3>
+        <p id="selector-callout">We can also use ID selectors, which can only be used once per document. This makes them less reusable for styling, and makes classes more preferred.</p>
+
+        <h2>Combinators</h2>
+        <p>Combinators combine other selectors.</p>
+
+        <h3>Descendant Selectors</h3>
+        <div class="boxes">
+            <p>Content Box #1. This is a paragraph element nested in a div with the .boxes class selector.</p>
+            <p>Content Box #2. This is a paragraph element nested in a div with the .boxes class selector.</p>
+            <p>Content Box #3. This is a paragraph element nested in a div with the .boxes class selector.</p>
+        </div>
+
+        <h3>Child Selectors</h3>
+        <ul class="items">
+            <li>Item One doesn't have a list style because of our CSS rule.</li>
+            <li>Item Two doesn't have a list style because of our CSS rule.</li>
+            <li>Item Three is a List Item with another list in it
+                <ul>
+                    <li>Item 3a</li>
+                    <li>Item 3b</li>
+                </ul>
+            </li>
+            <li>Item Four doesn't have a list style because of our CSS rule.</li>
+        </ul>
+
+        <h3>Adjacent Sibling</h3>
+        <p>Selects an element that's next to another (specified) element. For example, selecting the paragraph element directly after the H3 element.</p>
+
+        <h3>General Sibling</h3>
+        <p>Selects all instances of an element that comes after another (specified) element even if they're not adjacent to each other.</p>
     </body>
 </html>
