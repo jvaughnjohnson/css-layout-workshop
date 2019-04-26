@@ -33,3 +33,41 @@ h3 + p {
 h3 ~ p {
     color: slateblue;
 }
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+}
+
+/* Simple attribute selector*/
+
+*[class="box"] {
+    border: 2px solid grey;
+}
+
+/***
+
+
+- Select any element with a class of box
+
+*[class~="box"] {
+    border: 2px solid grey;
+}
+
+- Select on values that start with a string
+
+a[href^="http"] {
+    border: 2px solid grey;
+}
+
+- Select on values that end with a string
+
+a[href$=".com"]
+
+- Select on values that contains a string
+
+a[href*=".com"]
+
+Adding an "i" before the closing of the bracket makes the matches case insensitive
+
+***/

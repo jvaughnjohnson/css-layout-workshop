@@ -13,10 +13,10 @@
         <p>I need to learn how to select parts of the document I'm working on, before I can master CSS layout.</p>
             
         <h3>Element Selectors</h3>
-        <p>One of the most basic ways to select "something" to style is to target the HTML element directly. One thing to remember is here is that this approach will style every instance of this element in an HTML document.</p>
+        <p>One of the most basic ways to select "something" to style is to target the HTML element directly. One thing to remember here is that this approach will style every instance of this element in an HTML document.</p>
         
         <h3>Class Selectors</h3>
-        <p class="class-callout">To target something more specifically, we can use class selectors. Class selector don't have to be associated with any specific element.</p>
+        <p class="class-callout">To target something more specifically, we can use class selectors. Class selectors don't have to be associated with any specific element.</p>
         
         <h3>ID Selectors</h3>
         <p id="selector-callout">We can also use ID selectors, which can only be used once per document. This makes them less reusable for styling, and makes classes more preferred.</p>
@@ -51,7 +51,16 @@
         <p>Selects all instances of an element that comes after another (specified) element even if they're not adjacent to each other.</p>
 
         <h2>Attribute Selectors</h2>
+        <p>Some HTML elements have attributes.</p>
+        <p class="box">Please fill in the form!</p>
+        <p class="box alert">The form! It is unfilled!</p>
+        <form method="post" action="#">
+            <div><label for="fName">Name: </label></div><input type="text" name="fName" id="fName">
+            <div><label for="fEmail">Email: </label><input type="email" name="fEmail" id="fEmail">
+            <div><label for="fTerms">I agree to the terms: </label><input type="checkbox" name="fTerms" id="fTerms" value="true">
+        </form>
         <h2>Pseudo-Class Selectors</h2>
+        <p>Acts as if you added a class to an element in HTML markup. For example "tr:nth-child(odd)" where "nth-child" is the pseudo class. It's not a class in the markup, but, it knows what to target in the markup.</p>
         <h2>Pseudo-Element Selectors</h2>
         <h2>Selectors Usage Tips</h2>
         
